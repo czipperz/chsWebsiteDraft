@@ -1,0 +1,14 @@
+div#header {
+	border-bottom:1px solid #FFF;
+}
+div#navbar > a {
+	
+}
+div#navbar > a:link, div#navbar > a:visited {
+	
+}
+div#navbar > a:hover, div#navbar > a:active {
+	border:1px solid #FFF;
+	border-top:1px solid #093B62;
+	border-bottom:2px solid #FFF;
+}

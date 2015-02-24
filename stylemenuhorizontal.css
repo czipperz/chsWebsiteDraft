@@ -1,0 +1,19 @@
+div#navbar {
+        padding:12px;
+        padding-top:0px;
+        background-color:       #093B62;
+}
+div#navbar > a {
+        font-size:20px;
+        padding:12px 8px;
+        padding-bottom:11px;
+        text-decoration:none;
+}
+div#navbar > a:link, div#navbar > a:visited {
+        color:                  #5EA3D7;
+}
+div#navbar > a:hover, div#navbar > a:active {
+        color:                  #FFF;
+        border-bottom:2px solid #FFF;
+        background-color:       #214B6B;
+}
