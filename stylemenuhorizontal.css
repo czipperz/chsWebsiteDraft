@@ -2,11 +2,11 @@ div#navbar {
 	background-color:#093B62;
 	width:100%;
 	height:32px;
-	padding-left:16px;
 }
 div#navbar ul {
-	margin:0px;
 	padding:0px;
+	padding-left:16px;
+	margin:0px;
 }
 div#navbar ul li {
 	display:inline;
@@ -31,7 +31,4 @@ div#navbar a:hover, div#navbar a:active {
 div#content {
 	width:100%;
 	margin-top:-6px;
-}
-div#info h2 {
-//	float:left;
 }

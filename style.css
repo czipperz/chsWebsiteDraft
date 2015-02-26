@@ -1,17 +1,3 @@
-::-webkit-scrollbar {
-	width:8px;
-	height:5px;
-}
-::-webkit-scrollbar-thumb {
-	height:50pt;
-	background-color:#FFF;
-	-webkit-border-radius:5px;
-	outline-offset:5px;
-}
-::-webkit-scrollbar-track-piece {
-	background-color:#093B62;
-	-webkit-border-radius:0;
-}
 body {
 	height:100%;
 	width:100%;
@@ -21,6 +7,9 @@ body {
         font-size:14px;
 	margin-left:0px;
 }
+h3 {
+	font-size:19px;
+}
 .ld, .ld a:link, .ld a:visited {
         font-weight:bold;
 	color:			#5EA3D7;
@@ -29,58 +18,71 @@ body {
 	text-decoration:underline;
 }
 .ld a:hover, .ld a:active {
-	color:#F0F;
+	color:	#093B62;
 }
-div#page {
-	margin-right:5%;
-	margin-left:5%;
-}
-
-
-
-div#header {
-	margin-top:-9px;
-	background-color:	#093B62;
-	text-decoration:none;
-	padding:1px 24px;
-	padding-right:0px;
+#content .breaker {
+	height:8px;
+	background-color: rgb(19, 82, 132);
 	width:100%;
 }
-div#header h1 > a {
-	font-size:32px;
+#page {
+	margin-right:15px;
+	margin-left:15px;
+	background-color:#FFF;
+}
+
+
+
+#top {
+	background-image: url("http://2.bp.blogspot.com/_cQr_Q83ukWM/TCvBO6wdteI/AAAAAAAAAHs/kuNLJnJWu5A/s1600/corvallis-hs-1.jpg");
+}
+
+
+
+#header {
+	margin-top:-9px;
+//	background-color:	#093B62;
+	text-decoration:none;
+	padding:1px 0px;
+	width:100%;
+}
+#header h1 > a {
+	padding-left:24px;
+	font-size:40px;
 	text-decoration:none;
 }
-div#header h1 > a:link, div#header h1 > a:visited {
+#header h1 > a:link, div#header h1 > a:visited {
         color:                  #5EA3D7;
 }
-div#header h1 > a:hover, div#header h1 > a:active {
+#header h1 > a:hover, div#header h1 > a:active {
         color:                  #FFF;
 }
 
 
 
-div#content {
-	background-color:	#FFF;
+#content {
 	color:			#093B62;
 	padding:0px;
 	width:100%;
-	margin-top:0px;
 }
-div#info {
+#info {
+	margin-top:-5px;
 	padding-left:5px;
 	padding-bottom:10px;
 }
-div#info h2 {
-	margin-top:5px;
+#info h2, #announcements h2 {
+	font-size:30px;
+	margin-top:12px;
+	margin-bottom:10px;
 }
-div#content hr {
+#content hr {
 	width:100%;
 }
-div#announcements {
+#announcements {
 	padding-left:5px;
 	width:100%;
 	padding-top:5px;
 }
-div#announcements h2 {
+#announcements h2 {
 	margin-top:-5px;
 }
