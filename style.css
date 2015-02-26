@@ -21,15 +21,15 @@ body {
         font-size:14px;
 	margin-left:0px;
 }
-.ld {
+.ld, .ld a:link, .ld a:visited {
         font-weight:bold;
-        color:                  #5EA3D7;
-}
-.ld a:link, .ld a:visited, a:link .ld, a:visited .ld {
 	color:			#5EA3D7;
 }
-.ld a:hover, .ld a:active, a:link .ld, a:visited .ld {
-	color:			#093B62;
+.ld a {
+	text-decoration:underline;
+}
+.ld a:hover, .ld a:active {
+	color:#F0F;
 }
 div#page {
 	margin-right:5%;
@@ -43,6 +43,8 @@ div#header {
 	background-color:	#093B62;
 	text-decoration:none;
 	padding:1px 24px;
+	padding-right:0px;
+	width:100%;
 }
 div#header h1 > a {
 	font-size:32px;
@@ -58,16 +60,14 @@ div#header h1 > a:hover, div#header h1 > a:active {
 
 
 div#content {
-	float:left;
 	background-color:	#FFF;
 	color:			#093B62;
 	padding:0px;
-	width:83%;
+	width:100%;
 	margin-top:0px;
 }
 div#info {
 	padding-left:5px;
-	float:left;
 	padding-bottom:10px;
 }
 div#info h2 {
@@ -78,7 +78,6 @@ div#content hr {
 }
 div#announcements {
 	padding-left:5px;
-	float:left;
 	width:100%;
 	padding-top:5px;
 }

@@ -1,0 +1,7 @@
+@import "style.css";
+/*
+Use ONE of the following scripts for the menu:
+*/
+/*@import "stylemenuvertical.css";*/
+@import "stylemenuhorizontal.css";
+/*@import "stylemenuhover.css";*/
