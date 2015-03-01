@@ -1,8 +1,10 @@
+@import "styles.css";
+/*
 @import "style.css";
 @import "stylescrollbar.css";
 /*
 Use ONE of the following scripts for the menu:
-*/
-/*@import "stylemenuvertical.css";*/
+/*@import "stylemenuvertical.css";
 @import "stylemenuhorizontal.css";
-/*@import "stylemenuhover.css";*/
+/*@import "stylemenuhover.css";
+*/
