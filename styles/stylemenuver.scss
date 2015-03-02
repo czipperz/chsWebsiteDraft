@@ -1,0 +1,33 @@
+@import "variables";
+div#navbar {
+    float:left;
+    width:150px;
+    height:2000px;
+    
+    ul {
+        margin:0;
+        padding:0;
+        background-color:#093B62;
+        li {
+            list-style:none;
+            a {
+                font-size:20px;
+                color:#5EA3D7;
+                display:block;
+                height:25px;
+                line-height:25px;
+                text-indent:10px;
+                text-decoration:none;
+                width:100%;	
+                border-left:15px solid #093B62;
+                &:link, &:visited {
+                    color:$header-default-color;
+                }
+                &:hover, &:active {
+                    color:$header-hover-color;
+                    border-color:$header-hover-color;
+                }
+            }
+        }
+    }
+}

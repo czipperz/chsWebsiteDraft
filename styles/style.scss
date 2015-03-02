@@ -1,0 +1,100 @@
+@import "stylemenu";
+@import "variables";
+@import "stylescrollbar";
+
+body {
+    height:100%;
+    width:100%;
+    background-color:	$body-background;
+    color: 			#CCCFE0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    margin-left:0px;
+}
+h3 {
+    font-size:19px;
+}
+.ld {
+    &, a:link, a:visited {
+        font-weight:bold;
+        color:			#5EA3D7;
+    }
+    a {
+        text-decoration:underline;
+    }
+    a:hover, a:active {
+        color:	#093B62;
+    }
+}
+#content .breaker {
+    height:8px;
+    background-color: $body-background;
+    width:100%;
+}
+#page {
+    margin-right:15px;
+    margin-left:15px;
+    background-color:#FFF;
+}
+
+
+
+#top {
+    //background-image: url("http://2.bp.blogspot.com/_cQr_Q83ukWM/TCvBO6wdteI/AAAAAAAAAHs/kuNLJnJWu5A/s1600/corvallis-hs-1.jpg");
+    background-color:$header-background;
+}
+
+
+
+#header {
+    margin-top:-9px;
+    //	background-color:	#093B62;
+    text-decoration:none;
+    padding:1px 0px;
+    width:100%;
+    h1 {
+        > a {
+            padding-left:24px;
+            font-size:40px;
+            text-decoration:none;
+        }
+        > a:link, > a:visited {
+            color:                  $header-default-color;
+        }
+        > a:hover, > a:active {
+            color:                  $header-hover-color;
+        }
+    }
+}
+
+
+#content {
+    color:			#093B62;
+    padding:0px;
+    width:100%;
+}
+#info {
+    margin-top:-5px;
+    padding-left:5px;
+    padding-bottom:10px;
+}
+.contentheading {
+    font-size:30px;
+    margin-bottom:10px;
+}
+#info h2 {
+    @extend .contentheading;
+    margin-top:12px;
+}
+#content hr {
+    width:100%;
+}
+#announcements {
+    padding-left:5px;
+    width:100%;
+    padding-top:5px;
+    h2 {
+        @extend .contentheading;
+        margin-top:-5px;
+    }
+}
