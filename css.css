@@ -27,6 +27,40 @@ div#content {
   width: 100%;
   margin-top: -6px; }
 
+div#header {
+  margin-bottom: 10px; }
+  div#header h1 {
+    margin-bottom: .3em; }
+
+div#navbar {
+  padding-top: 7px;
+  margin-top: -10px;
+  padding-bottom: 0px; }
+  div#navbar a, div#navbar a:link, div#navbar a:visited {
+    border-left: 1px solid #093B62;
+    border-right: 1px solid #093B62;
+    border-top: 1px solid #fff; }
+  div#navbar a:hover, div#navbar a:active {
+    background-color: #093B62;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #093B62;
+    border-bottom: 2px solid #fff; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px; }
+
+::-webkit-scrollbar-thumb {
+  height: 50pt;
+  background-color: #FFF;
+  -webkit-border-radius: 5px;
+  outline-offset: 5px; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #093B62;
+  -webkit-border-radius: 0; }
+
 body {
   height: 100%;
   width: 100%;
@@ -72,7 +106,7 @@ h3 {
   #header h1 > a:link, #header h1 > a:visited {
     color: #5EA3D7; }
   #header h1 > a:hover, #header h1 > a:active {
-    color: #FFF; }
+    color: #fff; }
 
 #content {
   color: #093B62;
@@ -84,10 +118,12 @@ h3 {
   padding-left: 5px;
   padding-bottom: 10px; }
 
-#info h2, #announcements h2 {
+.contentheading, #info h2, #announcements h2 {
   font-size: 30px;
-  margin-top: 12px;
   margin-bottom: 10px; }
+
+#info h2 {
+  margin-top: 12px; }
 
 #content hr {
   width: 100%; }
