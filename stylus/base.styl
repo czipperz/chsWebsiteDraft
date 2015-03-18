@@ -1,0 +1,24 @@
+body-background = 		#135284
+header-background = 	#093B62
+header-default-color = 	#5EA3D7
+header-hover-color = 	#fff
+
+@import 'stylus/stylemenuhor'
+//@import 'stylus/stylemenuver'
+//@import 'stylus/stylemenuhover'
+
+::-webkit-scrollbar
+	width 8px
+	height 5px
+::-webkit-scrollbar-thumb
+	height 50pt
+	background-color header-hover-color
+	-webkit-border-radius 5px
+	outline-offset 5px
+::-webkit-scrollbar-track-piece
+	background-color header-background
+	-webkit-border-radius 0
+
+contentheading()
+	font-size 30px
+	margin-bottom 10px
