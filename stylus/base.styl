@@ -1,26 +1,25 @@
 //Variables
-body-background = 		#135284//#CCCFE0
+body-background = 		#FFFFFF//#135284//#CCCFE0
+body-color =			#CCCFE0
 header-background = 	#093B62
 header-default-color = 	#5EA3D7
 header-hover-color = 	#FFFFFF
 menu-hover-color = 		#214B6B
-plink-hover-color = 	header-background
-
-//Menu style.
-@import 'stylus/stylemenuhor'
-//@import 'stylus/stylemenuver'
-//@import 'stylus/stylemenuhover'
+page-background-color = #FFFFFF
+plink-hover-color = 	#093B62
+plink-default-color =	#5EA3D7
+thresh =				577px
 
 ::-webkit-scrollbar
 	width 8px
 	height 5px
 ::-webkit-scrollbar-thumb
 	height 50pt
-	background-color header-hover-color
+	background-color header-background
 	-webkit-border-radius 5px
 	outline-offset 5px
 ::-webkit-scrollbar-track-piece
-	background-color header-background
+	background-color header-default-color
 	-webkit-border-radius 0
 
 contentheading()

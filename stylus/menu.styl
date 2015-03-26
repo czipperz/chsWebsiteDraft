@@ -1,22 +1,45 @@
 div#navbar
 	background-color header-background
 	width 100%
-	height 32px
+	@media screen and (min-width: thresh)
+		height 33px
+		ul
+			padding 0px
+			margin 0px
+			margin-left 16px
+			li
+				width auto
+				display inline
+				height 30px
+				float left
+				list-style none
+				margin-bottom 6px
+		a
+			padding 7px 8px
+			display normal
+	@media screen and (max-width thresh)
+		height auto
+		margin-top -10px
+		padding-bottom 6px
+		ul
+			padding 0
+			margin 0
+			width 100%
+			li
+				list-style none
+				padding 2px 0
+				height 30px
+				width 100%
+		a
+			padding 5px
+			display block
+			padding-left 24px
 	ul
-		padding 0px
-		padding-left 16px
-		margin 0px
-		li
-			display inline
-			height 30px
-			float left
-			list-style none
-			margin-bottom 6px
+		background-color header-background
 	a
 		font-size 20px
-		padding 7px 8px
 		text-decoration none
-        &:link, &:visited
+		&:link, &:visited
 			color header-default-color
 		&:hover, &:active
 			color header-hover-color
