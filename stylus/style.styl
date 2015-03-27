@@ -4,16 +4,20 @@ body
 	background-color body-background
 	font-family Arial, Helvetica, sans-serif
 	font-size 14px
+	@media screen and (max-device-width thresh) {
+		font-size 25px
+	}
 	margin 0
 	//margin-right 8px
 h2 {
-    font-size: 19px;
+    font-size: (19/14 em);
 	margin: 15px 0 2px 0;
 }
 
 .ld
 	font-weight bold
 	color plink-default-color
+
 	a:link, a:visited
 		text-decoration underline
 		color plink-default-color
@@ -53,8 +57,8 @@ h2 {
 		margin-top 10px;
 
 		a {
-			font-size 40px;
-			@media screen and (max-device-width thresh) {
+			font-size (30/14 em);
+			@media screen and (max-device-width: thresh) {
 				font-size 30px
 			}
 			text-decoration none;
@@ -72,12 +76,14 @@ h2 {
     color: header-background;
     padding: 0px 5px;
 	h1 {
+		@media screen and (max-device-width: thresh) {
+			font-size 3em
+		}
 		margin 0;
 		margin-top 10px;
 	}
 	h2 {
-		contentheading()
-		font-size 19px
+		font-size 30px
 		margin-bottom 2px
 	}
 }
@@ -90,10 +96,13 @@ h2 {
 	float left
 	padding-right 5px
 	max-width thresh
+	@media screen and (max-device-width: thresh) {
+		min-width 100%
+	}
 }
 #announcements {
 	padding-right 5px
-	max-width thresh
+	max-width (thresh - 25px)
 	float left
 	h2 {
 		margin-top: 7px;
@@ -102,9 +111,13 @@ h2 {
 		padding 0;
 		margin 0;
 		list-style none;
+		margin-top -2px
 	}
 	li {
 		padding 2px 0;
+	}
+	@media screen and (max-device-width: thresh) {
+		min-width 100%
 	}
 }
 @media screen and (max-width thresh) {
