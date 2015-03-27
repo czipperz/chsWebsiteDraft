@@ -1,7 +1,7 @@
 !!! HTML
 %html
 	%head
-		%link(rel="stylesheet" type="text/css" href="style.css")
+		<link rel="stylesheet" type="text/css" href="style.css">
 		%title Home | Corvallis High School
 	%body
 		%div#page
@@ -22,14 +22,14 @@
 						%li
 							%a(href="") Athletics
 			#content
+				%h1 Home
 				#info
 					%h2 School Information
 					%span.ld School Address:
 					1400 NW Buchanan Ave., Corvallis, OR 97330
 					%br
 
-					%h3.ld
-						%a(href="") Contact Numbers
+					%h2 Contact Numbers
 					%span.ld Main Office Phone:
 					541-757-5871
 					%br
@@ -63,6 +63,18 @@
 						%br
 						%a(href="") Building and Athletic Calendar
 						%br
-				.breaker
 				#announcements
 					%h2 Announcements
+					%ul
+						%li
+							AP Tests -
+							%strong Deadline to sign up for an AP Test is Thursday, March 19
+							\- please pay only the deposit ($15 deposit for each test -
+							$30 for both physics tests) - students should pay in person in Beyond CHS.
+						%li
+							%a.ld(href='') March Newsletter
+							is available!
+						%li
+							Deadline to
+							%strong request a "Pass/Fail" grade is April 8th
+							\- go to the Counseling Center for the Pass/Fail Form.
