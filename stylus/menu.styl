@@ -1,7 +1,7 @@
-div#navbar {
+defaultnavbar() {
 	background-color header-background
 	width 100%
-	height auto
+	height 170px
 	margin-top -10px
 	padding-bottom 4px
 	ul {
@@ -32,6 +32,9 @@ div#navbar {
 		}
 	}
 }
+div#navbar {
+	defaultnavbar()
+}
 @media screen and (min-width: thresh) {
 	div#navbar {
 		height 38px
@@ -53,5 +56,11 @@ div#navbar {
 			padding-top 5px
 			display normal
 		}
+	}
+}
+@media screen and (max-device-width: thresh) {
+	div#navbar {
+		defaultnavbar()
+		height 400px
 	}
 }
