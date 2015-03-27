@@ -1,79 +1,101 @@
 @import 'stylus/*'
 
 body
-    height 100%
-    width 100%
-    background-color body-background
-    color body-color
-    font-family Arial, Helvetica, sans-serif
-    font-size 14px
-    margin 0
+	height 100%
+	width 100%
+	background-color body-background
+	font-family Arial, Helvetica, sans-serif
+	font-size 14px
+	margin 0
 	margin-right 8px
-h3
-    font-size 19px
-	margin 15px 0 2px 0
+h2 {
+    font-size: 19px;
+	margin: 15px 0 2px 0;
+}
+
 .ld
 	font-weight bold
 	color plink-default-color
-    a
-		&:link, &:visited
-			text-decoration underline
-			color plink-default-color
-		&:hover, &:active
-			color plink-hover-color
-#content .breaker
-    height 8px
-    background-color body-background
-    width 100%
-#page
-	margin-left 0
-    margin-right 0
-    background-color page-background-color
+	a:link, a:visited
+		text-decoration underline
+		color plink-default-color
+	a:hover, a:active
+		color plink-hover-color
+#page {
+	margin-left: 0;
+    margin-right: 0;
+    background-color: page-background-color;
+}
 
 
 
-#top
-    background-color header-background
+#top {
+    background-color: header-background;
+}
 
 
 
-#header
-    margin-top 0
+#header {
+    margin-top 0;
     //background-color #093B62
-    text-decoration none
-    padding 1px 0px
-    width 100%
-    h1
-		padding 0 24px
-		margin-bottom 12px
-		@media screen and (max-width thresh)
-			margin-bottom 5px
-		a
-			font-size 40px
-			text-decoration none
-			&:link, &:visited
+    text-decoration none;
+    padding 1px 0px;
+    width 100%;
+	background-color header-background;
+    h1 {
+		padding: 0px 24px;
+		margin-bottom 12px;
+		margin-top 10px;
+
+		@media screen and (max-width thresh) {
+			margin-bottom 5px;
+		}
+
+		a {
+			font-size 40px;
+			text-decoration none;
+			&:link, &:visited {
 				color header-default-color
-			&:hover, &:active
+			}
+			&:hover, &:active {
 				color header-hover-color
+			}
+		}
+	}
+}
 
-
-#content
-    color header-background
-    padding 0px
-    width 100%
-#info
-    margin-top -5px
-    padding-left 5px
-    padding-bottom 10px
-#info h2
-    contentheading()
-    margin-top 12px
-#content hr
-    width 100%
-#announcements
-    padding-left 5px
-    width 100%
-    padding-top 5px
-    h2
+#content {
+    color: header-background;
+    padding: 0px;
+    width: 100%;
+	padding-left: 5px;
+	h1 {
+		margin 0;
+		margin-top 10px;
+	}
+	h2 {
 		contentheading()
-		margin-top -5px
+		font-size 19px
+		margin-bottom 2px
+	}
+}
+#info {
+	margin-top: -5px;
+	padding: 0px;
+	h2 {
+		margin-top: 12px;
+	}
+}
+#announcements {
+    width 100%
+    h2 {
+		margin-top: 15px;
+	}
+	ul {
+		padding 0;
+		margin 0;
+	}
+	li {
+		padding 2px 0;
+	}
+}

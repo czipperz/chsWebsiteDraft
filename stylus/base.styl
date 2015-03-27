@@ -9,17 +9,19 @@ page-background-color = #FFFFFF
 plink-hover-color = 	#093B62
 plink-default-color =	#5EA3D7
 thresh =				577px
+scrollbar-fore =		#093B62
+scrollbar-back =		#FFFFFF
 
 ::-webkit-scrollbar
 	width 8px
 	height 5px
 ::-webkit-scrollbar-thumb
 	height 50pt
-	background-color header-background
+	background-color scrollbar-fore
 	-webkit-border-radius 5px
 	outline-offset 5px
 ::-webkit-scrollbar-track-piece
-	background-color header-default-color
+	background-color scrollbar-back
 	-webkit-border-radius 0
 
 contentheading()
