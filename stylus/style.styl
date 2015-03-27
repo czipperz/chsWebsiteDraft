@@ -1,5 +1,3 @@
-@import 'stylus/*'
-
 body
 	height 100%
 	width 100%
@@ -7,7 +5,7 @@ body
 	font-family Arial, Helvetica, sans-serif
 	font-size 14px
 	margin 0
-	margin-right 8px
+	//margin-right 8px
 h2 {
     font-size: 19px;
 	margin: 15px 0 2px 0;
@@ -22,9 +20,10 @@ h2 {
 	a:hover, a:active
 		color plink-hover-color
 #page {
+	margin-right 10px
 	margin-left: 0;
-    margin-right: 0;
-    background-color: page-background-color;
+	margin-right: 0;
+	background-color: page-background-color;
 }
 
 
@@ -66,9 +65,7 @@ h2 {
 
 #content {
     color: header-background;
-    padding: 0px;
-    width: 100%;
-	padding-left: 5px;
+    padding: 0px 5px;
 	h1 {
 		margin 0;
 		margin-top 10px;
@@ -85,17 +82,33 @@ h2 {
 	h2 {
 		margin-top: 12px;
 	}
+	float left
+	padding-right 5px
+	max-width thresh
 }
 #announcements {
-    width 100%
-    h2 {
-		margin-top: 15px;
+	padding-right 5px
+	max-width thresh
+	float left
+	h2 {
+		margin-top: 7px;
 	}
 	ul {
 		padding 0;
 		margin 0;
+		list-style none;
 	}
 	li {
 		padding 2px 0;
+	}
+}
+@media screen and (max-width thresh) {
+	#info {
+		padding-bottom 5px
+	}
+	#announcements {
+		h2 {
+			margin-top 0px
+		}
 	}
 }
