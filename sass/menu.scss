@@ -63,7 +63,10 @@ div#navbar {
 @media screen and (max-device-width: $thresh) {
 	div#navbar {
 		@include defaultnavbar();
-		height: 200px;
+		height: 300px;
+		ul li {
+			height: 50px;
+		}
 		a {
 			font-size: 40px;
 		}

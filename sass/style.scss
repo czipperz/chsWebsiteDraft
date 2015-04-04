@@ -81,10 +81,13 @@ h2 {
 #content {
     color: $header-background;
     padding: 0px 5px;
-	h1 {
-		@media screen and (max-device-width: $thresh) {
+	@media screen and (max-device-width: $thresh) {
+		font-size: 35px;
+		h1 {
 			font-size: 3em;
 		}
+	}
+	h1 {
 		margin: 0;
 		margin-top: 10px;
 	}
