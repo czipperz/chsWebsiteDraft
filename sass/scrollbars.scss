@@ -1,0 +1,19 @@
+@import 'sass/base';
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 5px;
+}
+::-webkit-scrollbar-thumb {
+	height: 50pt;
+	background-color: $scrollbar-fore;
+	-webkit-border-radius: 5px;
+	outline-offset: 5px;
+}
+::-webkit-scrollbar-track-piece {
+	background-color: $scrollbar-back;
+	-webkit-border-radius: 0;
+}
+::-webkit-scrollbar:horizontal {
+	display: none;
+}
