@@ -3,12 +3,12 @@
 @mixin menuImportant() {
 	color: $header-hover-color;
 	border-bottom: 2px solid $header-hover-color;
+	background-color: $menu-hover-color;
 }
 
 div#navbar {
 	a#currentPage {
 		@include menuImportant();
-		background-color: $menu-hover-color;
 	}
 }
 
@@ -75,7 +75,7 @@ div#navbar {
 @media screen and (max-device-width: $thresh) {
 	div#navbar {
 		@include defaultnavbar();
-		height: 300px;
+		height: 296px;
 		ul li {
 			height: 50px;
 		}
