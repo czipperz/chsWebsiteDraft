@@ -36,6 +36,10 @@
 		padding-top: 4px;
 		width: 250px;
 		height: 140px;
+		@media screen and (max-device-width: $thresh) {
+			width: 500px;
+			height: 280px;
+		}
 		overflow-x: auto;
 		white-space: wrap;
 		background-color: $header-default-color;
