@@ -1,5 +1,17 @@
 @import 'sass/base';
 
+@mixin menuImportant() {
+	color: $header-hover-color;
+	border-bottom: 2px solid $header-hover-color;
+}
+
+div#navbar {
+	a#currentPage {
+		@include menuImportant();
+		background-color: $menu-hover-color;
+	}
+}
+
 @mixin defaultnavbar() {
 	background-color: $header-background;
 	width: 100%;
@@ -22,15 +34,15 @@
 		padding: 5px;
 		display: block;
 		padding-left: 24px;
+		padding-top:2px;
+		padding-bottom:2px;
 		font-size: 20px;
 		text-decoration: none;
 		&:link, &:visited {
 			color: $header-default-color;
 		}
 		&:hover, &:active {
-			color: $header-hover-color;
-			border-bottom: 2px solid $header-hover-color;
-			background-color: $menu-hover-color;
+			@include menuImportant();
 		}
 	}
 }
