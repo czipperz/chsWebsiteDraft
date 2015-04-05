@@ -6,6 +6,9 @@
 	height: 100%;
 	h3 {
 		font-size: 20px;
+		@media screen and (max-device-width: $thresh) {
+			font-size: 40px;
+		}
 		width: 100%;
 		display: block;
 		float: left;

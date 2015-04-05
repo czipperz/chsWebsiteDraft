@@ -10,8 +10,11 @@ body {
       font-size: 25px; } }
 
 h2 {
-  font-size: 1.35714 em;
+  font-size: 28px;
   margin: 15px 0 2px 0; }
+  @media screen and (max-device-width: 590px) {
+    h2 {
+      font-size: 60px; } }
 
 .ld {
   font-weight: bold;
@@ -73,7 +76,6 @@ h2 {
     margin: 0;
     margin-top: 10px; }
   #content h2 {
-    font-size: 30px;
     margin-bottom: 2px; }
 
 #info {
@@ -121,6 +123,9 @@ h2 {
     display: block;
     float: left;
     margin: 8px 0 -2px 0; }
+    @media screen and (max-device-width: 590px) {
+      .view-content h3 {
+        font-size: 40px; } }
   .view-content > div {
     color: #093B62;
     background-color: #FFFFFF; }
@@ -155,9 +160,11 @@ h2 {
   padding-bottom: 0; }
 
 div#navbar a#currentPage {
-  color: #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
-  background-color: #214B6B; }
+  color: #FFFFFF; }
+  @media screen and (min-width: 590px) and (min-device-width: 590px) {
+    div#navbar a#currentPage {
+      border-bottom: 2px solid #FFFFFF;
+      background-color: #214B6B; } }
 
 div#navbar {
   background-color: #093B62;
@@ -186,9 +193,11 @@ div#navbar {
     div#navbar a:link, div#navbar a:visited {
       color: #5EA3D7; }
     div#navbar a:hover, div#navbar a:active {
-      color: #FFFFFF;
-      border-bottom: 2px solid #FFFFFF;
-      background-color: #214B6B; }
+      color: #FFFFFF; }
+      @media screen and (min-width: 590px) and (min-device-width: 590px) {
+        div#navbar a:hover, div#navbar a:active {
+          border-bottom: 2px solid #FFFFFF;
+          background-color: #214B6B; } }
 
 @media screen and (min-width: 590px) {
   div#navbar {
@@ -237,9 +246,12 @@ div#navbar {
       div#navbar a:link, div#navbar a:visited {
         color: #5EA3D7; }
       div#navbar a:hover, div#navbar a:active {
-        color: #FFFFFF;
-        border-bottom: 2px solid #FFFFFF;
-        background-color: #214B6B; }
+        color: #FFFFFF; } }
+      @media screen and (max-device-width: 590px) and (min-width: 590px) and (min-device-width: 590px) {
+        div#navbar a:hover, div#navbar a:active {
+          border-bottom: 2px solid #FFFFFF;
+          background-color: #214B6B; } }
+@media screen and (max-device-width: 590px) {
     div#navbar ul li {
       height: 50px; }
     div#navbar a {

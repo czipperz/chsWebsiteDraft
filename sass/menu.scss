@@ -2,8 +2,10 @@
 
 @mixin menuImportant() {
 	color: $header-hover-color;
-	border-bottom: 2px solid $header-hover-color;
-	background-color: $menu-hover-color;
+	@media screen and (min-width: $thresh) and (min-device-width: $thresh) {
+		border-bottom: 2px solid $header-hover-color;
+		background-color: $menu-hover-color;
+	}
 }
 
 div#navbar {
