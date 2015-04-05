@@ -17,7 +17,7 @@ div#navbar {
 @mixin defaultnavbar() {
 	background-color: $header-background;
 	width: 100%;
-	height: 170px;
+	height: 156px;
 	margin-top: -10px;
 	padding-bottom: 4px;
 	ul {
@@ -27,17 +27,14 @@ div#navbar {
 		background-color: $header-background;
 		li {
 			list-style: none;
-			padding: 2px 0;
-			height: 30px;
+			padding: 0;
+			height: 32px;
 			width: 100%;
 		}
 	}
 	a {
-		padding: 5px;
 		display: block;
-		padding-left: 24px;
-		padding-top:2px;
-		padding-bottom:2px;
+		padding: 4px 5px 4px 24px;
 		font-size: 20px;
 		text-decoration: none;
 		&:link, &:visited {
