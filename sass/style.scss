@@ -110,14 +110,23 @@ h2 {
 	}
 	float: left;
 	padding-right: 5px;
-	max-width: thresh;
+	width: 260px;
 	@media screen and (max-device-width: $thresh) {
+		padding-bottom: 5px;
 		min-width: 100%;
+	}
+	@media screen and (max-width: 870px) {
+		min-width: 100%;
+	}
+	@media screen and (min-width: 1050px) {
+		min-width: 430px;
 	}
 }
 #announcements {
-	padding-right: 5px;
-	max-width: (thresh - 25px);
+	@media screen and (min-width: 870px) {
+		max-width: $thresh;
+		padding-left: 5px;
+	}
 	float: left;
 	h2 {
 		margin-top: 7px;
@@ -133,13 +142,6 @@ h2 {
 	}
 	@media screen and (max-device-width: $thresh) {
 		min-width: 100%;
-	}
-}
-@media screen and (max-width $thresh) {
-	#info {
-		padding-bottom: 5px;
-	}
-	#announcements {
 		h2 {
 			margin-top: 0px;
 		}
