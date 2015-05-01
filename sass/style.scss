@@ -89,6 +89,7 @@ h2 {
 		display: none;
 	}
 	@media screen and (max-device-width: $thresh) {
+		padding-right: 10px;
 		font-size: 35px;
 		h1 {
 			font-size: 3em;
